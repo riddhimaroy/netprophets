@@ -14,6 +14,45 @@ h2 {
     font-size: 48px;
 }
 
+.sec6 {
+    margin: 20px auto;
+}
+.sec6 .container h3, h2 {
+    
+    text-align: center;
+}
+
+.formimage {
+    width: 100%;
+}
+
+#checkbox {
+    display: inline;
+}
+
+.formtext div {
+    margin: 10px 0;
+    /* font-family: s; */
+}
+
+input[type="text"], input[type="date"], input[type="time"] {
+    border-radius: 10px;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border-color: #F0F0F0;
+}
+
+#submit {
+    margin: 10px auto;
+}
+
+#services {
+    height: 100px;
+    vertical-align: top;
+    padding-bottom: 70px;
+}
+
 html{font-size: 16px;}
 @media screen and (max-width:767px) {
     html{font-size: 8px;}

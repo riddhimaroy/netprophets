@@ -1,0 +1,15 @@
+CSS Break points
+
+@media screen and (max-width:1440px){}
+@media screen and (max-width:1199px){}
+@media screen and (max-width:991px){}
+@media screen and (max-width:767px){}
+
+
+@media screen and (max-width:374px){} -- for rare phones
+
+Animations
+
+-use animate.css for adding animations when the website loads
+-use aos bundle for adding animations whenever the element loads on ur screen
+-use animation using webkit, moz and o for elements
