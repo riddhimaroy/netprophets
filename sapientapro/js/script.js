@@ -103,11 +103,6 @@ $(document).on('click', '.closemenu', function(){
 
 // accordion
 
-$(document).on('click', '.acc1', function() {
-    $(this).find('.ac1p1').slideToggle().remo;
-    $(this).siblings().find('.ac1p1').slideUp();
-}
-)
 
 // $(document).on('click', '.acc1', function(){
 //   $(this).siblings().removeClass('active');

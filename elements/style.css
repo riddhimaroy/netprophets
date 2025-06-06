@@ -1,0 +1,172 @@
+.form {
+    margin: 20px auto;
+}
+.form .container h3, h2 {
+    
+    text-align: center;
+}
+
+.formimage {
+    width: 100%;
+}
+
+#checkbox {
+    display: inline;
+}
+
+.formtext div {
+    margin: 10px 0;
+    /* font-family: s; */
+}
+
+input[type="text"], input[type="date"], input[type="time"] {
+    border-radius: 10px;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border-color: #F0F0F0;
+}
+
+#submit {
+    margin: 10px auto;
+}
+
+#services {
+    height: 100px;
+    vertical-align: top;
+    padding-bottom: 70px;
+}
+
+.tabheading {
+    background-color: #e6e6e6;
+    padding: 0 20px;
+    padding-top: 10px;
+    margin: 1px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #adabab;
+}
+
+.tabs {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    height: 100%;
+    margin-bottom: 0;
+}
+
+.tab {
+    padding: 10px;
+}
+
+.tabs .active {
+    border-radius: 0px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #adabab;
+    border-bottom: none;
+    background-color: #8297a8;
+    color: white;
+}
+
+.tabdesc {
+    display: none;
+}
+
+.accordion {
+    background-color: #FFEAC8;
+    padding: 20px;
+    list-style-type: none;
+}
+
+.acc {
+    margin: 0 auto;
+    max-width: 60%;
+    font-size: 24px;
+    background-color: #fff;
+    /* border-radius: 20px; */
+}
+
+.acc div {
+    border-style: solid;
+    border-color: #707070;
+    border-width: 1px;
+    padding: 2%;
+}
+
+.acc img {
+    width: 70px;
+    padding-right: 1%;
+}
+
+.ac1p1 {
+    display: none;
+}
+
+.m {
+    display: none;
+}
+
+.acc1.active .accor {
+    .n {
+        display: none;
+    }
+
+    .m {
+        display:inline-block;
+    }
+}
+
+.open {
+    margin: 30px auto;
+    display: block;
+}
+.popbox{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    overflow: hidden;
+    display: none;
+    
+
+}
+.popupbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    max-width: 600px;
+    background: #b9b3b3;
+    padding: 40px;
+}
+
+.popbox.active {
+    /* display: block; */
+}
+
+.popbox img {
+    max-width: 7%;
+    display: block;
+    margin-left: auto;
+}
+
+.discount {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+strong {
+    font-size: 36px;
+    color:#483131;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
