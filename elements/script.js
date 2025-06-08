@@ -32,3 +32,19 @@ $(document).on('click', '.closebtn', function() {
 $(document).on('click', '.btn', function() {
     $('.menu').toggle();
 })
+
+$(document).on('click', '.pics', function() {
+    $('.popimage').addClass('active');
+})
+
+$(document).on('click', '.pics', function() {
+    $('.popimage').addClass('active');
+    var imgSrc = $(this).attr('src');
+    console.log(imgSrc);
+    $('.poppic').attr("src",imgSrc);
+})
+
+$(document).on('click', '.cls', function() {
+    $('.popimage').removeClass('active');
+    $('.poppic').attr("src","");
+})

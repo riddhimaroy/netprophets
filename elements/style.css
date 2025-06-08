@@ -170,3 +170,81 @@ a:hover {
     cursor: pointer;
 }
 
+.gallery {
+    display: flex;
+    padding: 20px;
+    padding-left: 20px;
+    margin: 20px;
+    border-style: solid;
+    border-color: #4f4e4e;
+    border-width: 2px;
+    border-radius: 20px;
+}
+
+.pic {
+    list-style-type: none;
+    width: 100%;
+}
+
+.pic a {
+    /* padding: 5px; */
+    width: 100%;
+}
+
+/* .pic1, .pic2, .pic3 {
+    height: 50px;
+    width
+} */
+
+.pic a img {
+    width: 100%;
+    padding: 20px;
+}
+
+.popimage {
+    position: fixed;
+    background: rgba(0,0,0,0.7);
+    /* opacity: 0.6; */
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: none;
+}
+
+.popimg {
+    position: absolute;
+    /* opacity: 1; */
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    padding: 30px;
+    background-color: #262525;
+    border-radius: 20px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popimage.active {
+    display: flex;
+}
+
+.popimg img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.popimg button {
+    margin: 10px auto;
+    background-color: #54add3;
+    color: #285366;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: block;
+    border-style: none;
+}
