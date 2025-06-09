@@ -30,7 +30,7 @@ $(document).on('click', '.closebtn', function() {
 // })
 
 $(document).on('click', '.btn', function() {
-    $('.menu').toggle();
+    $('.menu').toggleClass('collapsed');
 })
 
 $(document).on('click', '.pics', function() {
