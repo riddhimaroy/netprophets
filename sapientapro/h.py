@@ -1,28 +1,32 @@
-nums = [-1, 1, 0, 3, -3]
+nums = [9,7,3,5,6,2,0,8,1,9]
+k=6
 
 
 class Solution:
-    def productExceptSelf(self, nums: list[int]) -> list[int]: 
+    def findMaxAverage(self, nums: list[int], k: int) -> float:
+        summ = 0
+        avg = 0.0
+        maxx = 0.0
 
-        pre = [1]* len(nums)
-        suf = [1]* len(nums)
+        summ = sum(nums[:k])
         
-        for i in range(1, len(nums)):
-            pre[i] = pre[i-1]*nums[i-1]
+        avg = summ/k
+        print(avg)
 
-        print(pre)
+        if(len(nums)==k):
+            return avg
 
-        for i in range(len(nums)-1, 0, -1):
-            suf[i-1] = suf[i]*nums[i]
+        for i in range(1, len(nums)-k+1):
+            summ=summ-nums[i-1]+nums[i+k-1]
+            avg=summ/k
 
-        print(suf)
+            print(avg)
 
-        for i in range(len(nums)):
-            nums[i] = pre[i]*suf[i]
+            if(avg>maxx):
+                maxx=avg
 
-        print(nums)
+        return maxx
+                    
 
-# nums.sort()
-# print(nums)
 sol = Solution()
-sol.productExceptSelf(nums)
+sol.findMaxAverage(nums, k)
