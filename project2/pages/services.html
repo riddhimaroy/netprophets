@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
+          <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -21,27 +23,65 @@
         <section class="header">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <img src="../images/logo.svg" alt="">
+                    <div class="col-xl-5 col-lg-3 col-md-6"><a href="">
+                        <img src="../images/logo.svg" alt=""></a>
                     </div>
-                    <div class="col-lg-6 menu">
+                    <div class="col-xl-7 col-lg-9 col-md-6 menu">
                         <ul class="menulist">
-                            <li>
-                                <a href="">Our Services</a>
+                            <li class="servbtn">
+                                <a href="services.html">Our Services</a>
                             </li>
                             <li>
-                                <a href="">About Us</a>
+                                <a href="../index.html#abtus">About Us</a>
                             </li>
                             <li>
-                                <a href="">Meet the Team</a>
+                                <a href="../index.html#team">Meet the Team</a>
                             </li>
                             <li>
-                                <a href="">Contact Us</a>
+                                <a href="../index.html#contactus">Contact Us</a>
                             </li>
                             <li>
-                                <a href="">Get a Free Quote</a>
+                                <a href="../index.html#form">Get a Free Quote</a>
                             </li>
+                            <li><a class="ham"><img src="../images/menu.svg" alt=""></a></li>
                         </ul>
+                        <div class="menudrop">
+                            <ul>
+                                <li class="md"><a href="ai.html">AI and Data Analytics</a></li>
+                                <li class="md"><a href="custom.html">Custom Applications</a></li>
+                                <li class="md"><a href="ecom.html">E-Commerce</a></li>
+                                <li class="md"><a href="lms.html">LMS</a></li>
+                                <li class="md"><a href="meta.html">Metaverse</a></li>
+                                <li class="md"><a href="sap.html">SAP</a></li>
+                            </ul>
+                        </div>
+                        <div class="collapsemenu">
+                            <ul class="menu1">
+                                <li class="md">
+                                    <a href="services.html">Our Services</a>
+                                </li>
+                                <li>
+                                <ul class="menu2">
+                                    <li class="md"><a href="ai.html">AI and Data Analytics</a></li>
+                                    <li class="md"><a href="custom.html">Custom Applications</a></li>
+                                    <li class="md"><a href="ecom.html">E-Commerce</a></li>
+                                    <li class="md"><a href="lms.html">LMS</a></li>
+                                    <li class="md"><a href="meta.html">Metaverse</a></li>
+                                    <li class="md"><a href="sap.html">SAP</a></li>
+                                </ul>
+                                </li>
+                                <li class="md">
+                                    <a href="../index.html#abtus">About Us</a>
+                                </li>
+                                <li class="md">
+                                    <a href="../index.html#team">Meet the Team</a>
+                                </li>
+                                <li class="md">
+                                    <a href="#../index.htmlcontactus">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- <a class="ham"><img src="images/menu.svg" alt=""></a> -->
                     </div>
                 </div>
             </div>
@@ -153,8 +193,8 @@
                 </div>
             </div>
         </section>
-        <section class="footerbefore">
-            <div class="container text-center">
+<section id="contactus" class="footerbefore">
+            <div data-aos="fade-up" class="container text-center">
                 <h2>Let's Drive Innovation and Success Together</h2>
                 <p>Ready to grow your business? Contact NetProphets Technology to discuss your project and see how we can help you succeed!</p>
                 <div class="linkbox">
@@ -175,7 +215,13 @@
                 <img src="../images/icon6.svg">
             </div>
         </section>
+
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script src="../bundles/bootstrap.min.js"></script>
     <script src="../bundles/jquery.min.js"></script>

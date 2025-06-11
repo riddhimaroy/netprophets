@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -21,10 +22,10 @@
         <section class="header">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-xl-5 col-lg-3 col-md-3"><a href="">
+                    <div class="col-xl-5 col-lg-3 col-md-6"><a href="">
                         <img src="images/logo.svg" alt=""></a>
                     </div>
-                    <div class="col-xl-7 col-lg-9 col-md-9 menu">
+                    <div class="col-xl-7 col-lg-9 col-md-6 menu">
                         <ul class="menulist">
                             <li class="servbtn">
                                 <a href="pages/services.html">Our Services</a>
@@ -41,6 +42,7 @@
                             <li>
                                 <a href="#form">Get a Free Quote</a>
                             </li>
+                            <li><a class="ham"><img src="images/menu.svg" alt=""></a></li>
                         </ul>
                         <div class="menudrop">
                             <ul>
@@ -52,13 +54,40 @@
                                 <li class="md"><a href="pages/sap.html">SAP</a></li>
                             </ul>
                         </div>
+                        <div class="collapsemenu">
+                            <ul class="menu1">
+                                <li class="md">
+                                    <a href="pages/services.html">Our Services</a>
+                                </li>
+                                <li>
+                                <ul class="menu2">
+                                    <li class="md"><a href="pages/ai.html">AI and Data Analytics</a></li>
+                                    <li class="md"><a href="pages/custom.html">Custom Applications</a></li>
+                                    <li class="md"><a href="pages/ecom.html">E-Commerce</a></li>
+                                    <li class="md"><a href="pages/lms.html">LMS</a></li>
+                                    <li class="md"><a href="pages/meta.html">Metaverse</a></li>
+                                    <li class="md"><a href="pages/sap.html">SAP</a></li>
+                                </ul>
+                                </li>
+                                <li class="md">
+                                    <a href="#abtus">About Us</a>
+                                </li>
+                                <li class="md">
+                                    <a href="#team">Meet the Team</a>
+                                </li>
+                                <li class="md">
+                                    <a href="#contactus">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- <a class="ham"><img src="images/menu.svg" alt=""></a> -->
                     </div>
                 </div>
             </div>
         </section>
         <section class="headsec">
             <div class="headcontent">
-                <div>
+                <div data-aos="zoom-in">
                     <h1>TECHNOLOGY FOR A SIMPLE TOMORROW</h1>
                     <p>Shaping Tomorrow with Innovative Tech Solutions Today</p>
                 </div>
@@ -71,17 +100,17 @@
             </div>
         </section>
         <section class="servicesec">
-            <div class="servicedesc">
+            <div  data-aos="fade-up" class="servicedesc">
                 <p>NetProphets Technology delivers innovative, results-driven solutions to help businesses harness modern technology. From system integration to custom software development, we enhance efficiency, drive growth, and align with your strategic goals.</p>
                 <p>Our team blends cutting-edge tech insights with your unique needs, offering smart, scalable solutions that evolve with your business. As your trusted partner, we provide end-to-end support—from consultation to implementation—ensuring lasting value and competitive advantage in a dynamic marketplace. Let’s collaborate to unlock new possibilities and accelerate your success.</p>
             </div>
-            <div class="heading1">
+            <div  data-aos="fade-up" class="heading1">
                 <h5>Our Services</h5>
                 <h2>Comprehensive Tech Solutions to Power Your Business</h2>
             </div>
             <div class="container servicecards">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6">
+                    <div data-aos="fade-up" class="col-lg-4 col-md-6">
                         <a href="pages/custom.html">
                         <div class="cardserv">
                             <img src="	https://www.nptsolution.com/wp-content/themes/npt/assets/images/custom-application.jpg" alt="">
@@ -96,7 +125,7 @@
                         </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div data-aos="fade-up" class="col-lg-4 col-md-6">
                         <a href="pages/lms.html">
                         <div class="cardserv">
                             <img src="https://www.nptsolution.com/wp-content/themes/npt/assets/images/lms.jpg" alt="">
@@ -111,7 +140,7 @@
                         </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div data-aos="fade-up" class="col-lg-4 col-md-6">
                         <a href="pages/sap.html">
                         <div class="cardserv">
                             <img src="https://www.nptsolution.com/wp-content/themes/npt/assets/images/sap.jpg" alt="">
@@ -126,7 +155,7 @@
                         </div>
                         </a>
                     </div>
-                    <div class="col-lg-8 col-md-12 order-md-last">
+                    <div data-aos="fade-up" class="col-lg-8 col-md-12 order-md-last">
                         <a href="pages/ai.html">
                         <div class="cardserv">
                             <img src="https://www.nptsolution.com/wp-content/themes/npt/assets/images/ai-and-data.jpg" alt="">
@@ -141,7 +170,7 @@
                         </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div data-aos="fade-up" class="col-lg-4 col-md-6">
                         <a href="pages/meta.html">
                         <div class="cardserv">
                             <img src="https://www.nptsolution.com/wp-content/themes/npt/assets/images/metaverse.jpg" alt="">
@@ -158,7 +187,7 @@
                     </div>
                 </div>
             </div>
-            <a href="pages/services.html" class="viewall">
+            <a data-aos="fade-up" href="pages/services.html" class="viewall">
                 <div>
                     View All Services
                     <span class="arr1">
@@ -166,17 +195,17 @@
                     </span>
                 </div>
             </a>
-            <div class="heading1">
+            <div data-aos="fade-up" class="heading1">
                 <h2>Translate Your Goals into Lasting Value</h2>
             </div>
-            <a href="" class="tellus">
+            <a data-aos="fade-up" href="" class="tellus">
                 Tell Us About Our Project
             </a>
         </section>
         <section id="abtus" class="aboutus">
             <div class="container-fluid about">
                 <div class="row">
-                    <div class="col-lg-7 col-md-6 d-flex align-items-center">
+                    <div data-aos="fade-up" class="col-lg-7 col-md-6 d-flex align-items-center">
                         <div class="abouttext">
                             <div class="heading2">
                                 <h5>About Us</h5>
@@ -186,7 +215,7 @@
                             <p>Grant launched NetProphets Technology to bring NPC’s expertise to the U.S., delivering accessible solutions that foster growth, efficiency, and meaningful change for businesses and communities.</p>
                         </div>
                     </div>
-                    <div class="col-lg-5 col-md-6">
+                    <div data-aos="fade-up" class="col-lg-5 col-md-6">
                         <img src="images/about.svg" alt="" class="aboutpic">
                     </div>
                 </div>
@@ -196,7 +225,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-4">
-                        <div class="pointtext">
+                        <div data-aos="fade-up" class="pointtext">
                             <div class="pointhead">
                                 <img src="images/icon1.svg" alt="">
                                 <h2>Mission</h2>
@@ -205,7 +234,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4">
-                        <div class="pointtext">
+                        <div data-aos="fade-up" class="pointtext">
                             <div class="pointhead">
                                 <img src="images/icon2.svg" alt="">
                                 <h2>Vision</h2>
@@ -213,7 +242,7 @@
                             <p>To be the leading provider of innovative technology solutions, renowned for delivering results and driving transformative change for our clients.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4">
+                    <div data-aos="fade-up" class="col-lg-4 col-md-4">
                         <div class="pointtext">
                             <div class="pointhead">
                                 <img src="images/icon3.svg" alt="">
@@ -228,10 +257,10 @@
         <section id="team" class="meetteam">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-4">
+                    <div data-aos="fade-up" class="col-lg-4 col-md-4">
                         <img class="grant" src="https://www.nptsolution.com/wp-content/uploads/2025/04/Surge_Preferred-90-scaled.jpg" alt="">
                     </div>
-                        <div class="col-lg-8 col-md-8 d-flex align-items-center">
+                        <div data-aos="fade-up" class="col-lg-8 col-md-8 d-flex align-items-center">
                             <div>
                                 <div class="heading2">
                                         <h5>Meet the Team</h5>
@@ -248,16 +277,16 @@
             </div>
         </section>
         <section id="form" class="makeform">
-            <div class="heading1">
+            <div data-aos="fade-up" class="heading1">
                 <h5>Let's Connect</h5>
                 <h2>Get Your Free Quote Here</h2>
             </div>
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6">
+                    <div data-aos="fade-up" class="col-lg-6">
                         <img class="formimg" src="https://www.nptsolution.com/wp-content/themes/npt/assets/images/connect-illustration.png" alt="">
                     </div>
-                    <div class="col-lg-6">
+                    <div data-aos="fade-up" class="col-lg-6">
                         <form>
                             <div class="row">
                                 <div class="col-lg-6 col-md-6">
@@ -302,7 +331,7 @@
             </div>
         </section>
         <section id="contactus" class="footerbefore">
-            <div class="container text-center">
+            <div data-aos="fade-up" class="container text-center">
                 <h2>Let's Drive Innovation and Success Together</h2>
                 <p>Ready to grow your business? Contact NetProphets Technology to discuss your project and see how we can help you succeed!</p>
                 <div class="linkbox">
@@ -325,6 +354,11 @@
         </section>
 
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     
     <script src="bundles/bootstrap.min.js"></script>
     <script src="bundles/jquery.min.js"></script>

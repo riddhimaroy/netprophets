@@ -28,3 +28,7 @@ $(document).on('mouseenter', '.md', function() {
 $(document).on('mouseleave', '.md', function() {
     $(this).css("background-color", "#323956");
 })
+
+$(document).on('click', '.ham', function(){
+    $('.collapsemenu').toggleClass('active');
+})

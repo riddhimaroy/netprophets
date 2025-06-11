@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metaverse</title>
+          <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -18,7 +20,72 @@
 </head>
 <body>
     <div class="mt_bod">
-        <section class="header"></section>
+        <section class="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-3 col-md-6"><a href="">
+                        <img src="../images/logo.svg" alt=""></a>
+                    </div>
+                    <div class="col-xl-7 col-lg-9 col-md-6 menu">
+                        <ul class="menulist">
+                            <li class="servbtn">
+                                <a href="services.html">Our Services</a>
+                            </li>
+                            <li>
+                                <a href="../index.html#abtus">About Us</a>
+                            </li>
+                            <li>
+                                <a href="../index.html#team">Meet the Team</a>
+                            </li>
+                            <li>
+                                <a href="../index.html#contactus">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="../index.html#form">Get a Free Quote</a>
+                            </li>
+                            <li><a class="ham"><img src="../images/menu.svg" alt=""></a></li>
+                        </ul>
+                        <div class="menudrop">
+                            <ul>
+                                <li class="md"><a href="ai.html">AI and Data Analytics</a></li>
+                                <li class="md"><a href="custom.html">Custom Applications</a></li>
+                                <li class="md"><a href="ecom.html">E-Commerce</a></li>
+                                <li class="md"><a href="lms.html">LMS</a></li>
+                                <li class="md"><a href="meta.html">Metaverse</a></li>
+                                <li class="md"><a href="sap.html">SAP</a></li>
+                            </ul>
+                        </div>
+                        <div class="collapsemenu">
+                            <ul class="menu1">
+                                <li class="md">
+                                    <a href="services.html">Our Services</a>
+                                </li>
+                                <li>
+                                <ul class="menu2">
+                                    <li class="md"><a href="ai.html">AI and Data Analytics</a></li>
+                                    <li class="md"><a href="custom.html">Custom Applications</a></li>
+                                    <li class="md"><a href="ecom.html">E-Commerce</a></li>
+                                    <li class="md"><a href="lms.html">LMS</a></li>
+                                    <li class="md"><a href="meta.html">Metaverse</a></li>
+                                    <li class="md"><a href="sap.html">SAP</a></li>
+                                </ul>
+                                </li>
+                                <li class="md">
+                                    <a href="../index.html#abtus">About Us</a>
+                                </li>
+                                <li class="md">
+                                    <a href="../index.html#team">Meet the Team</a>
+                                </li>
+                                <li class="md">
+                                    <a href="#../index.htmlcontactus">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- <a class="ham"><img src="images/menu.svg" alt=""></a> -->
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="srv_header">
             <img src="https://www.nptsolution.com/wp-content/uploads/2024/12/metaverse-banner.jpg" alt="">
             <div class="srv_headertext">
@@ -377,11 +444,35 @@
             </div>
         </section>
 
-        <section class="footerbefore"></section>
-        <section class="footer"></section>
-
+        <section id="contactus" class="footerbefore">
+            <div data-aos="fade-up" class="container text-center">
+                <h2>Let's Drive Innovation and Success Together</h2>
+                <p>Ready to grow your business? Contact NetProphets Technology to discuss your project and see how we can help you succeed!</p>
+                <div class="linkbox">
+                    <a class="d-flex align-items-center links">
+                        <img src="../images/icon5.svg" alt="">
+                        <p>gkoops@nptsolution.com</p>
+                    </a>
+                    <a class="d-flex align-items-center links">
+                        <img src="../images/icon4.svg" alt="">
+                        <p>+1 (616) 368-1339</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="container end">
+                <p>© Copyright 2025 NetProphets Technology, LLC USA. All rights reserved.</p>
+                <img src="../images/icon6.svg">
+            </div>
+        </section>
 
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script src="../bundles/bootstrap.min.js"></script>
     <script src="../bundles/jquery.min.js"></script>
