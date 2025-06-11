@@ -26,9 +26,8 @@ a {
     left: 0;
 }
 
-/* .menu {
-    width: 100%;
-} */
+.menu {
+position: relative;}
 
 .menulist {
     list-style-type: none;
@@ -37,11 +36,14 @@ a {
     align-items: center;
     margin-bottom: 0;
     height: 100%;
+    position: relative;
+    padding-left: 0;
 }
 
 .menulist li a {
     color: #fff;
     font-size: 16px;
+    font-family: "karla";
 }
 
 .menulist li:nth-child(5) {
@@ -55,6 +57,51 @@ a {
     a {
         color: #000;
     }
+}
+
+.menulist li:nth-child(5):hover {
+    background-color: #008080;    
+    a {
+        color: #fff;
+    }
+    text-decoration: none;
+}
+
+.menulist li:hover {
+    text-decoration: underline #fff 2px;
+    text-underline-offset: 10px;
+}
+
+.menudrop {
+    background: #323956;
+    /* color: #fff; */
+    position: absolute;
+    display: none;
+       /* border: solid; */
+    top: 70%;
+
+}
+
+.menudrop ul {
+    padding: 0px;
+}
+
+.menudrop ul li {
+    list-style-type: none;
+    text-decoration: none;
+    border-color: #e4e4e4;
+    border-bottom: solid;
+    border-width: 1px;
+    padding: 20px;
+}
+
+.menudrop ul li:nth-child(6) {
+    border-style: none;
+}
+
+.menudrop ul li a {
+    color: #fff;
+    font-size: 16px;
 }
 
 body {
@@ -257,13 +304,14 @@ h2 {
     padding: 1% 0;
     display: block;
     margin: 40px auto;
-    width: 15%;
+    width: 25%;
     color: #fff;
     text-align: center;
     border-radius: 50px;
     font-weight: 600;
     font-size: 15px;
     margin-bottom: 100px;
+    border: none;
 }
 
 .aboutus {
@@ -276,6 +324,7 @@ h2 {
 
 .aboutpic {
     border-radius: 50%;
+    max-width: 100%;
 }
 
 .abouttext {
@@ -343,6 +392,7 @@ h2 {
 
 .end p {
     margin-bottom: 0px;
+    font-size: 13px;
 }
 
 /* SERVICES PAGE */
@@ -385,7 +435,7 @@ h2 {
     font-size: 20px;
 }
 
-.srv_h1 {
+.srv_h1, .srv_h2 {
     padding-bottom: 40px;
 }
 
@@ -395,6 +445,17 @@ h2 {
     content: '';
     background: #fff;
     top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.srv_h2::after {
+    width: 150px;
+    height: 3px;
+    content: '';
+    background: #fff;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
@@ -416,8 +477,9 @@ h2 {
     margin: 40px auto;
 }
 
-.lms_bod p, .ai_bod p, .ecm_bod p, .cst_bod p, .mt_bod p {
+.lms_bod p, .ai_bod p, .ecm_bod p, .cst_bod p, .mt_bod p, .sap_bod p, .sap_bod li {
     font-size: 22px;
+    font-family: "Karla";
 }
 
 .lms_features {
@@ -605,4 +667,153 @@ svg {
     box-shadow: none;
     margin: -2% 0;
     background: transparent;
+}
+
+/* SAP PAGE */
+
+/* .sap_bod .container {
+    width: 80%;
+} */
+
+.sap_sec1 {
+    padding: 5% 0;
+}
+
+.container1 {
+    padding: 0 5%;
+}
+
+.sap_box {
+    position: relative;
+    /* margin: 150px 0; */
+    height: calc(100% - 250px);
+
+}
+
+.sap_cardbox {
+    background: #323956;
+    height: 270px;
+    padding: 5%;
+    border-radius: 10px;
+    position: absolute;
+    /* position: absolute; */
+    top: -100px;
+    left: 0;
+    /* transform: translate(-50%, 0%); */
+    width: 100%;
+    /* width: 50px; */
+    height: 200px;
+    content: "";
+    z-index: 1;
+}
+
+.sap_cardtext {
+    
+    display: flex;
+    align-items: center;
+    margin: 3%;
+}
+
+.sap_cardtext h5 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.sap_cardtext svg {
+    display: block;
+    width: 60px;
+}
+
+.sap_textbox {
+    background: #fff;
+    border-radius: 10px;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    padding: 5%;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 150px;
+    /* height: 100%; */
+
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    
+    /* width: 50px; */
+    /* height: 100%;
+    content: "";
+    z-index: 3; */ 
+}
+
+.sap_list li {
+    margin: 5%;
+}
+
+/* everything else */
+
+input, textarea {
+    margin-bottom: 2%;
+    /* position: relative; */
+}
+
+label {
+    font-family: "karla";
+    color: #47494b;
+}
+
+@media screen and (max-width:1199px){
+    h1 {
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h5 {
+        font-size: 22px;
+    }
+
+    .servtext div h3 {
+        font-size: 26px;
+    }
+
+    .cardserv img {
+        height: 419px;
+        object-fit: cover;
+        /* width: 100%; */
+    }
+
+    .servtext div p {
+        font-size: 16px;
+    }
+
+    .servtext div h6 {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width:991px){
+    .servicedesc p {
+        font-size: 18px;
+    }
+
+    .about {
+        padding: 50px 5%;
+    }
+
+    .formimg {
+        display: none;
+    }
+
+    .menulist li:nth-child(5) {
+        margin: 0 3%;
+    }
 }
