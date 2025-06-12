@@ -228,6 +228,21 @@ h1 {
     /* margin-top: 50px; */
 }
 
+video {
+    position: relative;
+}
+
+video::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    content: '';
+    z-index: 5;
+    background-image: url(https://www.nptsolution.com/wp-content/themes/npt/assets/images/bannerdots.png);
+}
+
 .heading1 {
     text-align: center;
     width: 45%;
